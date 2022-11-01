@@ -68,11 +68,12 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(JSON.stringify(answers, null, '  '));
 
-        writeToFile('TEST.md', generateMarkdown(answers))
-        fs.appendFile('TEST.md', renderLicenseSection(answers.license), (err) =>
+        writeToFile('./example-READMEs/README.md', generateMarkdown(answers))
+        fs.appendFile('./example-READMEs/README.md', renderLicenseSection(answers.license), (err) =>
         err ? console.error(err) : console.log('Commit logged!'))
       });
 }
 
 // Function call to initialize app
 init();
+
