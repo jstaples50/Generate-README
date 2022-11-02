@@ -10,6 +10,8 @@ This project required creating a Command Line Application that produces a README
 
 [Example generated README](./example-READMEs/README.md)
 
+[Link to Walkthrough Video](https://drive.google.com/file/d/1nB8duU2MJLfB69ili-nHjOiZg4fhX8o8/view)
+
 ## Table of Contents
 
 - [Installation](#installation)
