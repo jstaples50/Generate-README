@@ -68,8 +68,8 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(JSON.stringify(answers, null, '  '));
 
-        writeToFile('./example-READMEs/README.md', generateMarkdown(answers))
-        fs.appendFile('./example-READMEs/README.md', renderLicenseSection(answers.license), (err) =>
+        writeToFile('./README.md', generateMarkdown(answers))
+        fs.appendFile('./README.md', renderLicenseSection(answers.license), (err) =>
         err ? console.error(err) : console.log('Commit logged!'))
       });
 }
